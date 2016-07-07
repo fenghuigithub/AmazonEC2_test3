@@ -31,7 +31,7 @@ app.use(methodOverride('X-HTTP-Method-Override')); // override with the X-HTTP-M
 // 	var gift = new Product({name:'doll'});
 // 	console.log(gift.name);
 // });
-var gift1 = new mongoOp.Materials({'name':'gift1'});
+var gift1 = new mongoOp({name:'gift1'});
 gift1.save(function(err){
 	if(err) return handleError(err);
 	console.log('Yeap');
