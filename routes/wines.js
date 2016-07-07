@@ -13,11 +13,11 @@ db.once('open',function(){
     });
     //console.log('Yeah!');
 });
+var testSchema = new mongoose.Schema({name:String});
+module.exports = mongoose.model('test',testSchema);
+// module.exports = function(mongoose){
 
-//module.exports = mongoose.model('test',testSchema);
-module.exports = function(mongoose){
-	var testSchema = new mongoose.Schema;
-	var Material = new testSchema({name:String});
-	var models = {Materials:mongoose.model('Materials',Material)};
-	return models;
-}
+// 	var Material = new testSchema({name:String});
+// 	var models = {Materials:mongoose.model('Materials',Material)};
+// 	return models;
+// }
