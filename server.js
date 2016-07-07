@@ -8,6 +8,7 @@ var morgan = require('morgan');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var mongoOp = require('./routes/wines');
+var router = express.Router();
 // var wine = require('./app/wines');
 
 // configuration ===============================================================
