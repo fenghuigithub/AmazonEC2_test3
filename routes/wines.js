@@ -12,3 +12,5 @@ db.once('open',function(){
         console.log('Yeah!');
     });
 });
+var testSchema = new mongoose.Schema({name:String});
+module.exports = mongoose.model('test',testSchema);
