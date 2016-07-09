@@ -31,7 +31,7 @@ app.use(methodOverride('X-HTTP-Method-Override')); // override with the X-HTTP-M
 // 	var gift = new Product({name:'doll'});
 // 	console.log(gift.name);
 // });
-var gift1 = new mongoOp({name:'http://ec2-54-173-25-145.compute-1.amazonaws.com:8080/users'});
+var gift1 = new mongoOp({name:'http://brilliantentertainment.com/images/red-gift-box-gold-bow.png'});
 gift1.save(function(err){
 	if(err) return handleError(err);
 	console.log('Yeap');
