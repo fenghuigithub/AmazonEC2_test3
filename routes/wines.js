@@ -1,5 +1,5 @@
 var mongoose = require('mongoose'); 
-mongoose.connect("mongodb://fengh:app@ec2-54-173-25-145.compute-1.amazonaws.com:27017/dummyDB"); 
+mongoose.connect("mongodb://fengh:app@ec2-54-173-25-145.compute-1.amazonaws.com:27017/AmazonEC2_test3"); 
 var db=mongoose.connection;
 db.on('error',console.error.bind(console,'connection error:'));
 db.once('open',function(){
